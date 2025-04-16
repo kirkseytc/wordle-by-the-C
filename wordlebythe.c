@@ -6,10 +6,10 @@
 #define WORD_AMOUNT 12
 
 enum COLOR {
-    GREY,
+    WHITE,
     YELLOW,
     GREEN,
-    WHITE
+    GREY
 };
 
 char WORD_POOL[WORD_AMOUNT][6] = {
@@ -39,7 +39,7 @@ int main(void){
     char buffer[6];
     char* selected_word = WORD_POOL[rand() % WORD_AMOUNT];
     int turns = 1;
-    enum COLOR colors[26] = {WHITE};
+    enum COLOR colors[26] = {0};
 
     while(turns <= 6){
 
